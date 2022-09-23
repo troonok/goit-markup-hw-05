@@ -117,6 +117,7 @@ h1, h2, h3, p {
  {
     color:var(--accent-color);
     fill:var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link{
     display: flex;
@@ -300,6 +301,7 @@ h1, h2, h3, p {
 .icon-socials-link:focus {
     background-color: var(--accent-color);
     fill: #ffffff;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-socials li:not(:last-child){
     margin-right: 10px;
@@ -311,6 +313,7 @@ h1, h2, h3, p {
 .icon-socials-link.connect:hover,
 .icon-socials-link.connect:focus{
     background-color: var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*клиенты*/
 .clients-list{
@@ -335,6 +338,7 @@ h1, h2, h3, p {
 .clients-link:focus{
     fill:var(--accent-color);
     border: 1px solid var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list li:not(:last-child){
     margin-right: 30px;
@@ -401,6 +405,7 @@ color: #FFFFFF;
 .button-filter:focus{
     background-color: var(--accent-color);
     color:#ffffff;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .content-example-list{
     display: flex;
@@ -467,4 +472,5 @@ color: #FFFFFF;
 .content-example-item:hover .opposite-text{
     transform: translateY(0);
     opacity: 1;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
