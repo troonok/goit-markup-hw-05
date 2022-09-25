@@ -182,7 +182,7 @@ h1, h2, h3, p {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal{
     position: absolute;
@@ -195,6 +195,8 @@ h1, h2, h3, p {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     opacity: 1;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .close-button{
@@ -515,7 +517,8 @@ color: #FFFFFF;
 
     padding: 63px 24px;
 }
-.content-example-item:hover .opposite-text{
+.content-example-item:hover .opposite-text,
+.content-example-item:focus-within .opposite-text{
     transform: translateY(0);
     opacity: 1;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
